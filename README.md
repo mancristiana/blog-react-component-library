@@ -2,8 +2,8 @@
 
 This project was bootstrapped with 
 * [Create React App](https://github.com/facebook/create-react-app)
-* [Storybook](https://storybook.js.org/)
-* [Rollup]
+* [Storybook](https://storybook.js.org)
+* [Rollup](https://rollupjs.org)
 ## Available Scripts
 
 In the project directory, you can run:
@@ -26,7 +26,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the library using Rollup to the `build` folder.
 
 
-### ``yarn build-storybook`
+### `yarn build-storybook`
 
 Builds the Storybook application that showcases components for production to the `storybook-static` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
