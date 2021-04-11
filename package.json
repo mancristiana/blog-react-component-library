@@ -2,10 +2,17 @@
   "name": "ui-components",
   "version": "0.1.0",
   "private": true,
+  "main": "./build/index.js",
+  "module": "./build/index.es.js",
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -15,19 +22,25 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-typescript": "^8.2.1",
     "@storybook/addon-actions": "^6.2.7",
     "@storybook/addon-essentials": "^6.2.7",
     "@storybook/addon-links": "^6.2.7",
     "@storybook/node-logger": "^6.2.7",
     "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/react": "^6.2.7"
+    "@storybook/react": "^6.2.7",
+    "postcss": "^8.2.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.45.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0"
   },
   "eslintConfig": {
     "extends": [
